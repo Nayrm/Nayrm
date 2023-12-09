@@ -13,15 +13,10 @@ body {
     
 }
 
-#top {
-    display: flex;
-    justify-content: flex-end;
-    max-height: 1rem;
-}
 
 a {
     
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     text-decoration: none;
     color: #fff;
     margin-right: 2rem;
@@ -31,7 +26,7 @@ a {
 
 a:hover {
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     
 }
 
@@ -42,6 +37,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     height: 90%;
+    min-height: fit-content;
 }
 
 #intro {
@@ -50,26 +46,32 @@ a:hover {
 }
 
 #fade1 {
-    animation: fade1 2.2s ease-in-out 0.5s forwards; /* Reduced by 0.2s */
+    animation: fade1 2.1s ease-in-out 0.3s forwards; /* Reduced by 0.2s */
 }
 
 #fade2 {
-    animation: fade2 2.2s ease-in-out 3.1s forwards; /* Reduced by 0.2s */
+    animation: fade2 2.1s ease-in-out 2.1s forwards; /* Reduced by 0.2s */
 }
 
 #fade3 {
-    animation: fade3 3.0s ease-in-out 5.9s forwards; /* Reduced by 0.2s */
+    animation: fade3 2.9s ease-in-out 5s forwards; /* Reduced by 0.2s */
 }
 
 #fade4 {
-    animation: fade4 2.2s ease-in-out 8.7s forwards; /* Reduced by 0.2s */
+    display: flex;
+    justify-content: flex-end;
+    max-height: 1rem;
+    min-height: 1rem;
+    animation: fade4 2.1s ease-in-out 7.6s forwards; /* Reduced by 0.2s */
+
+    
 }
 
-#fade5 {
-    animation: fade5 2.2s ease-in-out 8.7s forwards; /* Reduced by 0.2s */
-}
 
-#fade1, #fade2, #fade3, #fade4, #fade5 {
+
+
+
+#fade1, #fade2, #fade3, #fade4 {
     opacity: 0; /* Set the initial opacity to 0 */
 }
 
@@ -109,14 +111,9 @@ a:hover {
     }
 }
 
-@keyframes fade5 {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
+
+
+
 
 @media (max-width: 768px) {
    #introcontainer {
@@ -124,11 +121,11 @@ a:hover {
     }
 
     a {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     a:hover {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
     }
 
 
@@ -140,10 +137,9 @@ a:hover {
     }
 
     a {
-        font-size: 1.9rem;
+        font-size: 1.6rem;
     }
-
     a:hover {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 }
