@@ -54,7 +54,7 @@ a:hover {
 }
 
 #fade3 {
-    animation: fade3 2.9s ease-in-out 5s forwards; /* Reduced by 0.2s */
+    animation: fade3 2.9s ease-in-out 4.7s forwards; /* Reduced by 0.2s */
 }
 
 #fade4 {
@@ -62,7 +62,7 @@ a:hover {
     justify-content: flex-end;
     max-height: 1rem;
     min-height: 1rem;
-    animation: fade4 2.1s ease-in-out 7.6s forwards; /* Reduced by 0.2s */
+    animation: fade4 2.1s ease-in-out 7.3s forwards; /* Reduced by 0.2s */
 
     
 }
