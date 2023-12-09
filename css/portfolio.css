@@ -14,6 +14,7 @@ body {
 }
 
 
+
 a {
     
     font-size: 2.2rem;
@@ -46,15 +47,15 @@ a:hover {
 }
 
 #fade1 {
-    animation: fade1 2.1s ease-in-out 0.3s forwards; /* Reduced by 0.2s */
+    animation: fade1 2.1s ease-in-out 0.2s forwards; 
 }
 
 #fade2 {
-    animation: fade2 2.1s ease-in-out 2.1s forwards; /* Reduced by 0.2s */
+    animation: fade2 2.1s ease-in-out 2s forwards; 
 }
 
 #fade3 {
-    animation: fade3 2.9s ease-in-out 4.5s forwards; /* Reduced by 0.2s */
+    animation: fade3 2.9s ease-in-out 4s forwards; 
 }
 
 #fade4 {
@@ -62,9 +63,7 @@ a:hover {
     justify-content: flex-end;
     max-height: 1rem;
     min-height: 1rem;
-    animation: fade4 2.1s ease-in-out 7.3s forwards; /* Reduced by 0.2s */
-
-    
+    animation: fade4 2.1s ease-in-out 6.8s forwards;
 }
 
 
@@ -72,15 +71,17 @@ a:hover {
 
 
 #fade1, #fade2, #fade3, #fade4 {
-    opacity: 0; /* Set the initial opacity to 0 */
+    opacity: 0;
 }
 
 @keyframes fade1 {
     0% {
         opacity: 0;
+        
     }
     100% {
         opacity: 1;
+        
     }
 }
 
@@ -110,10 +111,6 @@ a:hover {
         opacity: 1;
     }
 }
-
-
-
-
 
 @media (max-width: 768px) {
    #introcontainer {
