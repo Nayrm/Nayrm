@@ -54,7 +54,7 @@ a:hover {
 }
 
 #fade3 {
-    animation: fade3 2.9s ease-in-out 4.7s forwards; /* Reduced by 0.2s */
+    animation: fade3 2.9s ease-in-out 4.5s forwards; /* Reduced by 0.2s */
 }
 
 #fade4 {
