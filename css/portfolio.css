@@ -1,0 +1,105 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+   
+    background: radial-gradient(ellipse at center, #6b4123 30%,#683e21 40%, #4e2b13 70%, #3e220e 90%);
+    color: #fff;
+    font-family: serif;
+    font-weight: normal;
+    text-shadow: 8px 8px 8px #3c1f0b;
+    
+}
+
+#top {
+    display: flex;
+    justify-content: flex-end;
+    max-height: 1rem;
+}
+
+a {
+    
+    font-size: 2rem;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    transition: all 1s;
+}
+
+a:hover {
+    color: #fff;
+    font-size: 2.1rem;
+    
+}
+
+#introcontainer {
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+}
+
+#intro {
+    text-align: center;
+    width: 60%;
+}
+
+#fade1 {
+    animation: fade1 2.5s ease-in-out 1s forwards;
+}
+
+#fade2 {
+    animation: fade2 2.5s ease-in-out 4s forwards;
+}
+
+#fade3 {
+    animation: fade3 2.5s ease-in-out 7.5s forwards;
+}
+
+#fade1,#fade2,#fade3 {
+    opacity: 0; /* Set the initial opacity to 0 */
+}
+
+@keyframes fade1 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade3 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+   #introcontainer {
+        font-size: 1.5rem; /* Adjust the font size for smaller screens */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px)  {
+    #introcontainer {
+        font-size: 2rem; /* Adjust the font size for smaller screens */
+    }
+}
