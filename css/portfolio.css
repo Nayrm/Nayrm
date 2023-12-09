@@ -50,22 +50,26 @@ a:hover {
 }
 
 #fade1 {
-    animation: fade1 2.5s ease-in-out 1s forwards;
+    animation: fade1 2.2s ease-in-out 0.5s forwards; /* Reduced by 0.2s */
 }
 
 #fade2 {
-    animation: fade2 2.5s ease-in-out 4s forwards;
+    animation: fade2 2.2s ease-in-out 3.1s forwards; /* Reduced by 0.2s */
 }
 
 #fade3 {
-    animation: fade3 3.3s ease-in-out 7.5s forwards;
+    animation: fade3 3.0s ease-in-out 5.9s forwards; /* Reduced by 0.2s */
 }
 
 #fade4 {
-    animation: fade3 2.5s ease-in-out 11.1s forwards;
+    animation: fade4 2.2s ease-in-out 8.7s forwards; /* Reduced by 0.2s */
 }
 
-#fade1,#fade2,#fade3,#fade4 {
+#fade5 {
+    animation: fade5 2.2s ease-in-out 8.7s forwards; /* Reduced by 0.2s */
+}
+
+#fade1, #fade2, #fade3, #fade4, #fade5 {
     opacity: 0; /* Set the initial opacity to 0 */
 }
 
@@ -96,9 +100,35 @@ a:hover {
     }
 }
 
+@keyframes fade4 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade5 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 @media (max-width: 768px) {
    #introcontainer {
-        font-size: 1.5rem; /* Adjust the font size for smaller screens */
+        font-size: 1.6rem; /* Adjust the font size for smaller screens */
+    }
+
+    a {
+        font-size: 1.5rem;
+    }
+
+    a:hover {
+        font-size: 1.6rem;
     }
 
 
@@ -107,5 +137,13 @@ a:hover {
 @media (min-width: 769px) and (max-width: 1200px)  {
     #introcontainer {
         font-size: 2rem; /* Adjust the font size for smaller screens */
+    }
+
+    a {
+        font-size: 1.9rem;
+    }
+
+    a:hover {
+        font-size: 2rem;
     }
 }
