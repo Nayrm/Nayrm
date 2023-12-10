@@ -44,11 +44,11 @@ a:hover {
 }
 
 #fade2 {
-    animation: fade 2.1s ease-in-out 2s forwards; 
+    animation: fade 2.1s ease-in-out 2.3s forwards; 
 }
 
 #fade3 {
-    animation: fade 2.7s ease-in-out 3.9s forwards; 
+    animation: fade 2.7s ease-in-out 4s forwards; 
 }
 
 #fade4 {
