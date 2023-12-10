@@ -4,19 +4,14 @@ html, body {
 }
 
 body {
-   
     background: radial-gradient(ellipse at center, #6b4123 30%,#683e21 40%, #4e2b13 70%, #3e220e 90%);
     color: #fff;
     font-family: serif;
     font-weight: normal;
     text-shadow: 8px 8px 8px #3c1f0b;
-    
 }
 
-
-
 a {
-    
     font-size: 2.2rem;
     text-decoration: none;
     color: #fff;
@@ -26,9 +21,7 @@ a {
 }
 
 a:hover {
-    color: #fff;
     font-size: 2.3rem;
-    
 }
 
 #introcontainer {
@@ -47,15 +40,15 @@ a:hover {
 }
 
 #fade1 {
-    animation: fade1 2.1s ease-in-out 0.2s forwards; 
+    animation: fade 2.1s ease-in-out 0.2s forwards; 
 }
 
 #fade2 {
-    animation: fade2 2.1s ease-in-out 2s forwards; 
+    animation: fade 2.1s ease-in-out 2s forwards; 
 }
 
 #fade3 {
-    animation: fade3 2.7s ease-in-out 3.9s forwards; 
+    animation: fade 2.7s ease-in-out 3.9s forwards; 
 }
 
 #fade4 {
@@ -63,29 +56,14 @@ a:hover {
     justify-content: flex-end;
     max-height: 1rem;
     min-height: 1rem;
-    animation: fade4 2.1s ease-in-out 6.6s forwards;
+    animation: fade 2.1s ease-in-out 6.3s forwards;
 }
-
-
-
-
 
 #fade1, #fade2, #fade3, #fade4 {
     opacity: 0;
 }
 
-@keyframes fade1 {
-    0% {
-        opacity: 0;
-        
-    }
-    100% {
-        opacity: 1;
-        
-    }
-}
-
-@keyframes fade2 {
+@keyframes fade {
     0% {
         opacity: 0;
     }
@@ -94,45 +72,23 @@ a:hover {
     }
 }
 
-@keyframes fade3 {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fade4 {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 
 @media (max-width: 768px) {
    #introcontainer {
-        font-size: 1.6rem; /* Adjust the font size for smaller screens */
+        font-size: 1.6rem;
     }
-
     a {
         font-size: 1.2rem;
     }
-
     a:hover {
         font-size: 1.3rem;
     }
-
-
 }
 
 @media (min-width: 769px) and (max-width: 1200px)  {
     #introcontainer {
-        font-size: 2rem; /* Adjust the font size for smaller screens */
+        font-size: 2rem;
     }
-
     a {
         font-size: 1.6rem;
     }
