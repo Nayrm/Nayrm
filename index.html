@@ -22,13 +22,15 @@
             display: flex; /* Use Flexbox */
             align-items: center; /* Center items vertically */
             justify-content: center; /* Center items horizontally */
+           
+            border-radius: 10px; /* Round the corners */
         }
 
         .mysummary {
             
             text-align: left;
             color: black;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             font-family: 'Roboto', sans-serif;
             font-weight: bold;
         }
@@ -69,16 +71,43 @@
     }
 }
 
-        #topleft,
-        #topright,
-        #bottomleft,
-        #bottomright {
-            position: absolute;
-            width: 50%;
-            height: 50%;
-            background-color: #f0f0f0; /* Set a background color for the border */
-            z-index: -5; /* Place the border below the image */
-        }
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: row; /* Keep text and image side by side */
+    }
+
+    .text-container {
+        margin-right: 20px; /* Adjusted space between text and image */
+        width: 50%; /* Adjust width for smaller screens */
+    }
+
+    .mysummary {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .centerblock img {
+        width: 150px; /* Adjust image size for smaller screens */
+        height: 165px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-container {
+        width: 40%; /* Further adjust width for very small screens */
+    }
+
+    .centerblock img {
+        width: 120px; /* Further adjust image size for mobile phones */
+        height: 132px;
+    }
+
+    .centerblock::before {
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px; /* Adjust the border effect for smaller screens */
+    }
+}
 
 
     </style>
@@ -86,7 +115,7 @@
 <body>
     <div class="flex-container">
         <div class="text-container">
-            <p class="mysummary">Welcome!</p>
+            <p class="mysummary">Welcome</p>
             <p class="mysummary">My name is Ryan T. Mijangos</p>
             <p class="mysummary">I am a full-stack software developer based out of Valrico, FL</p>
         </div>
@@ -95,6 +124,6 @@
         </div>
     </div>
 
-   
+
 </body>
 </html>
