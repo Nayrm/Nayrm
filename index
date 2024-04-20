@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <style>
+    html, body {
+      height: 100%; /* Ensures that the html and body tags take up the full height of the viewport */
+      margin: 0; /* Removes default margin */
+      padding: 0; /* Removes default padding */
+    }
+    iframe {
+      width: 100%; /* Ensures the iframe takes the full width of its container */
+      height: 100%; /* Ensures the iframe takes the full height of its container */
+      border: none; /* Optional: Removes the border around the iframe */
+    }
+  </style>
+  </head>
+  <body>
+    <iframe src="https://script.google.com/macros/s/AKfycbzpGsKNlyXKon6fyyUQzCPoVtwZiUe1h80aZZNGf2abGCPTkX_S2vGK20DaXkUceVA/exec"></iframe>
+  </body>
+</html>
